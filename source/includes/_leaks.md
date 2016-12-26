@@ -29,6 +29,6 @@ This endpoint retrieves all the available leaks.
 
 ### HTTP Request
 
-`GET htts://sug.rocks/api/leaks.json`
+`GET https://api.sug.rocks/leaks.json`
 
 <aside class="success">Usually, there's only one video preview. But whow knows?</aside>

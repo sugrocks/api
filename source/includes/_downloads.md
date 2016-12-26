@@ -71,7 +71,7 @@ This endpoint retrieves all downloads.
 
 ### HTTP Request
 
-`GET htts://sug.rocks/api/dl.json`
+`GET https://api.sug.rocks/dl.json`
 
 <aside class="notice">Files that contains two episodes in one have an underscore between episodes number. Like for episode 1 & 2: `1_2`.</aside>
 <aside class="notice">`url`, `marebucks`, `dailymotion` and `torrent` can be "null" if not available.</aside>

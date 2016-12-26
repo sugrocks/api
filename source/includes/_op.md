@@ -13,6 +13,6 @@ This endpoint retrieves the OP for new threads.
 
 ### HTTP Request
 
-`GET htts://sug.rocks/api/op.json`
+`GET https://api.sug.rocks/op.json`
 
 <aside class="success">This can't be simpler.</aside>

@@ -41,6 +41,6 @@ This endpoint retrieves all threads.
 
 ### HTTP Request
 
-`GET htts://sug.rocks/api/threads.json`
+`GET https://api.sug.rocks/threads.json`
 
 <aside class="notice">/sugen/ don't return anything for `page` and `archive`.</aside>
