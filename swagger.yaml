@@ -70,18 +70,19 @@ paths:
         200:
           description: download list
           schema:
-            type: array
-            minItems: 2
-            maxItems: 3
-            items:
-              $ref: '#/definitions/Dl'
+            type: object
+            $ref: '#/definitions/Dl'
 definitions:
   ThreadStatus:
     required:
+      - archived
       - bump_limit
       - image_limit
-      - archived
     properties:
+      archived:
+        type: boolean
+        default: false
+        description: "If the thread is currently archived on 4chad (read-only)."
       bump_limit:
         type: boolean
         default: false
@@ -90,59 +91,36 @@ definitions:
         type: boolean
         default: false
         description: "If the thread has reached the image limit."
-      archived:
-        type: boolean
-        default: false
-        description: "If the thread is currently archived on 4chad (read-only)."
   Thread:
     required:
-      - id
-      - board
-      - timestamp
-      - edition
-      - page
-      - status
-      - url
       - archive
+      - board
+      - edition
+      - id
       - media
       - op
+      - page
+      - status
+      - timestamp
+      - url
     properties:
+      archive:
+        type: string
+        default: "https://desuarchive.org/{board}/thread/{id}"
+        description: "Link to the archives. Doesn't apply to `/sugen/` (returns null)."
+      board:
+        type: string
+        default: "co"
+        description: "Board's code. Can be `co`, `trash` or `sugen`."
+      edition:
+        type: string
+        default: "It's a thing Edition"
+        description: "Parsed OP with extracted edition name."
       id:
         type: integer
         format: int32
         minimum: 0
         description: "Thread's ID."
-      board:
-        type: string
-        default: "co"
-        description: "Board's code. Can be `co`, `trash` or `sugen`."
-      timestamp:
-        type: integer
-        minimum: 1483228800
-        maximum: 1514764800
-        description: "Timestamp when the thread was created."
-      edition:
-        type: string
-        default: "It's a thing Edition"
-        description: "Parsed OP with extracted edition name."
-      page:
-        type: integer
-        format: int32
-        minimum: 0
-        maximum: 10
-        description: "Page in the catalogue. Doesn't apply to `/sugen/`."
-      status:
-        type: object
-        $ref: '#/definitions/ThreadStatus'
-        description: "Defines thread status."
-      url:
-        type: string
-        default: "https://boards.4chan.org/{board}/thread/{id}"
-        description: "Link to the thread."
-      archive:
-        type: string
-        default: "https://desuarchive.org/{board}/thread/{id}"
-        description: "Link to the archives. Doesn't apply to `/sugen/`."
       media:
         type: string
         default: "https://is.4chan.org/{board}/{mediaid}s.{ext}"
@@ -150,6 +128,25 @@ definitions:
       op:
         type: string
         description: "OP's full text"
+      page:
+        type: integer
+        format: int32
+        minimum: 0
+        maximum: 11
+        description: "Page in the catalogue. Doesn't apply to `/sugen/` (returns 0)."
+      status:
+        type: object
+        $ref: '#/definitions/ThreadStatus'
+        description: "Defines thread status."
+      timestamp:
+        type: integer
+        minimum: 1483228800
+        maximum: 1514764800
+        description: "Timestamp when the thread was created."
+      url:
+        type: string
+        default: "https://boards.4chan.org/{board}/thread/{id}"
+        description: "Link to the thread."
 
   LeaksMedia:
     required:
@@ -161,40 +158,40 @@ definitions:
         default: "https://{host}/leaks/{file}"
   Leaks:
     required:
-      - id
-      - title
-      - desc
-      - date
       - air_date
+      - date
+      - desc
+      - id
       - images
+      - title
       - videos
     properties:
-      id:
-        type: integer
-        format: int32
-        minimum: 0
-        description: "Leaks' ID."
-      title:
-        type: string
-        description: "Episode's title."
-      desc:
-        type: string
-        description: "Episode's synopsis."
-      date:
-        type: integer
-        minimum: 1483228800
-        maximum: 1514764800
-        description: "Timestamp of when the leak was found."
       air_date:
         type: integer
         minimum: 1483228800
         maximum: 1514764800
         description: "Timestamp to the air date."
+      date:
+        type: integer
+        minimum: 1483228800
+        maximum: 1514764800
+        description: "Timestamp of when the leak was found."
+      desc:
+        type: string
+        description: "Episode's synopsis."
+      id:
+        type: integer
+        format: int32
+        minimum: 0
+        description: "Leaks' ID."
       images:
         type: array
         items:
           $ref: '#/definitions/LeaksMedia'
         description: "Found images."
+      title:
+        type: string
+        description: "Episode's title."
       videos:
         type: array
         items:
@@ -203,48 +200,53 @@ definitions:
 
   DlDetails:
     required:
-      - id
-      - season
-      - episode
-      - title
-      - url
-      - marebucks
       - dailymotion
+      - date
+      - episode
+      - id
+      - marebucks
+      - season
+      - title
       - torrent
+      - url
     properties:
-      id:
-        type: integer
-        format: int32
-        minimum: 0
-        maximum: 150
-        description: "Download ID."
-      season:
-        type: string
-        pattern: "[1-5]"
-        description: "Season number or `Specials`"
-      episode:
-        type: string
-        pattern: "[1-99]"
-        description: "Episode number. When two episodes are in one file, there's an underscore between episodes numbers."
-      title:
-        type: string
-        description: "Episode's title."
-      direct:
-        type: string
-        default: "https://dl.{host}/{path}"
-        description: "Direct download link. (Can be `null`)"
-      marebucks:
-        type: string
-        default: "https://marebucks/sun/{episode}"
-        description: "Marebucks link. (Can be `null`)"
       dailymotion:
         type: string
         default: "www.dailymotion.com/video/{videoid}"
         description: "Dailymotion link. (Can be `null`)"
+      date:
+        type: integer
+        minimum: 1483228800
+        maximum: 1514764800
+        description: "Timestamp of when the download was added."
+      episode:
+        type: string
+        pattern: "[1-99]"
+        description: "Episode number. When two episodes are in one file, there's an underscore between episodes numbers."
+      id:
+        type: integer
+        format: int32
+        minimum: 1
+        description: "Download ID for this category."
+      marebucks:
+        type: string
+        default: "https://marebucks/sun/{episode}"
+        description: "Marebucks link. (Can be `null`)"
+      season:
+        type: string
+        pattern: "[1-5]"
+        description: "Season number or `Special`"
+      title:
+        type: string
+        description: "Episode's title."
       torrent:
         type: string
         default: "https://dl.{host}/{path}"
         description: "Torrent download link. (Can be `null`)"
+      direct:
+        type: string
+        default: "https://dl.{host}/{path}"
+        description: "Direct download link. (Can be `null`)"
   Dl:
     required:
       - category
