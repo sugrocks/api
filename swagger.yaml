@@ -9,8 +9,7 @@ info:
     url: https://sug.rocks
   license:
     name: MIT
-host: sug.rocks
-basePath: /api
+host: api.sug.rocks
 schemes:
   - https
 produces:
