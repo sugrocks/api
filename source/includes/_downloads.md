@@ -1,70 +1,69 @@
 # Downloads
 
 ```json
-[
-  {
-    "preair": [
-      {
-        "id": 1,
-        "season": 1,
-        "episode": 1,
-        "title": "episode title",
-        "url": "https://example.com/preair/ep.mkv",
-        "marebucks": "https://marebucks.com/sun/",
-        "dailymotion": "https://dailymotion.com/",
-        "torrent": null
-      }
-    ]
-  },
-  {
-    "itunes": [
-      {
-        "id": 1,
-        "season": "1",
-        "episode": "1_2",
-        "title": "Gem Glow & Laser Light Cannon",
-        "url": "https://example.com/01x01_02.mkv",
-        "marebucks": "https://marebucks.com/sun/1",
-        "dailymotion": null,
-        "torrent": "https://example.com/torrents/01x01_02.mkv.torrent"
-      },
-      {
-        "id": 2,
-        "season": "1",
-        "episode": "3_4",
-        "title": "Cheeseburger Backpack & Together Breakfast",
-        "url": "https://example.com/01x03_04.mkv",
-        "marebucks": "https://marebucks.com/sun/3",
-        "dailymotion": null,
-        "torrent": "https://example.com/torrents/01x03_04.mkv.torrent"
-      },
-    ]
-  },
-  {
-    "individual": [
-      {
-        "id": 1,
-        "season": "1",
-        "episode": "1",
-        "title": "Gem Glow",
-        "url": "https://example.com/mega/01x01.mp4",
-        "marebucks": "https://marebucks.com/sun/1",
-        "dailymotion": null,
-        "torrent": null
-      },
-      {
-        "id": 2,
-        "season": "1",
-        "episode": "2",
-        "title": "Laser Light Cannon",
-        "url": "https://example.com/mega/01x02.mp4",
-        "marebucks": "https://marebucks.com/sun/2",
-        "dailymotion": null,
-        "torrent": null
-      },
-    ]
-  }
-]
+{
+  "individual": [
+    {
+      "dailymotion": null,
+      "date": 1473502695,
+      "episode": "1",
+      "id": 1,
+      "marebucks": "https://marebucks.com/sun/1",
+      "season": "1",
+      "title": "Gem Glow",
+      "torrent": null,
+      "url": "https://example.com/mega/01x01.mp4"
+    },
+    {
+      "dailymotion": null,
+      "date": 1473502695,
+      "episode": "2",
+      "id": 2,
+      "marebucks": "https://marebucks.com/sun/2",
+      "season": "1",
+      "title": "Laser Light Cannon",
+      "torrent": null,
+      "url": "https://example.com/mega/01x02.mp4"
+    },
+  ],
+  "itunes": [
+    {
+      "dailymotion": null,
+      "date": 1473502695,
+      "episode": "1_2",
+      "id": 1,
+      "marebucks": "https://marebucks.com/sun/1",
+      "season": "1",
+      "title": "Gem Glow & Laser Light Cannon",
+      "torrent": "https://example.com/torrents/01x01_02.mkv.torrent",
+      "url": "https://example.com/01x01_02.mkv"
+    },
+    {
+      "dailymotion": null,
+      "date": 1473502695,
+      "episode": "3_4",
+      "id": 2,
+      "marebucks": "https://marebucks.com/sun/3",
+      "season": "1",
+      "title": "Cheeseburger Backpack & Together Breakfast",
+      "torrent": "https://example.com/torrents/01x03_04.mkv.torrent",
+      "url": "https://example.com/01x03_04.mkv"
+    },
+  ],
+  "preair": [
+    {
+      "dailymotion": "https://dailymotion.com/",
+      "date": 1473502695,
+      "episode": 1,
+      "id": 1,
+      "marebucks": "https://marebucks.com/sun/",
+      "season": 1,
+      "title": "episode title",
+      "torrent": null,
+      "url": "https://example.com/preair/ep.mkv"
+    }
+  ]
+}
 ```
 
 This endpoint retrieves all downloads.

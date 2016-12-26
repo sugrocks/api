@@ -2,8 +2,8 @@
 
 ```json
 {
-  "subject": "/sug/ - Steven Universe General",
-  "content": "[TITLE] Edition\n\nLast Thread: >>[POST]\n\n[NEW RELEASES]\n>Steven's Dream & Adventures in Light Distortion\nAiring January 30 at 7PM EST: https:\/\/twitter.com\/cartoonnetwork\/status\/811588726912585729\n>Three Gems and a Baby\n[snip]"
+  "content": "[TITLE] Edition\n\nLast Thread: >>[POST]\n\n[NEW RELEASES]\n>Steven's Dream & Adventures in Light Distortion\nAiring January 30 at 7PM EST: https:\/\/twitter.com\/cartoonnetwork\/status\/811588726912585729\n>Three Gems and a Baby\n[snip]",
+  "subject": "/sug/ - Steven Universe General"
 }
 ```
 

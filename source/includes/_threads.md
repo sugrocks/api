@@ -3,36 +3,36 @@
 ```json
 [
   {
-    "id": 26886430,
+    "archive": "https://desuarchive.org/trash/thread/6886430",
     "board": "trash",
-    "timestamp": 1482654547,
     "edition": "It's Christmas Edition",
+    "id": 26886430,
+    "media": "https://is.4chan.org/trash/1482654547608s.jpg",
+    "op": "\/sug\/ - Steven Universe General<br><br>It&#039;s Christmas Edition[snip]",
     "page": 7,
     "status": {
+      "archived": false,
       "bump_limit": true,
-      "image_limit": false,
-      "archived": false
+      "image_limit": false
     },
-    "url": "https://boards.4chan.org/trash/thread/6886430",
-    "archive": "https://desuarchive.org/trash/thread/6886430",
-    "media": "https://is.4chan.org/trash/1482654547608s.jpg",
-    "op": "\/sug\/ - Steven Universe General<br><br>It&#039;s Christmas Edition[snip]"
+    "timestamp": 1482654547,
+    "url": "https://boards.4chan.org/trash/thread/6886430"
   },
   {
-    "id": 94921,
-    "board": "sugen",
-    "timestamp": 1480547635,
-    "edition": "Not Steven Universe Edition",
-    "page": null,
-    "status": {
-      "bump_limit": false,
-      "image_limit": false,
-      "archived": false
-    },
-    "url": "https://8ch.net/sugen/res/94921.html",
     "archive": null,
+    "board": "sugen",
+    "edition": "Not Steven Universe Edition",
+    "id": 94921,
     "media": "https://media.8ch.net/file_store/thumb/f44639d20cc93eac99d5ea6d67fbb5d7cdbf567f0313ca221ca0b81aa12762aa.png",
-    "op": "<p class=\"body-line ltr \">Not Steven Universe Edition <\/p>[snip]"
+    "op": "<p class=\"body-line ltr \">Not Steven Universe Edition <\/p>[snip]",
+    "page": 0,
+    "status": {
+      "archived": false,
+      "bump_limit": false,
+      "image_limit": false
+    },
+    "timestamp": 1480547635,
+    "url": "https://8ch.net/sugen/res/94921.html"
   }
 ]
 ```
@@ -43,4 +43,4 @@ This endpoint retrieves all threads.
 
 `GET https://api.sug.rocks/threads.json`
 
-<aside class="notice">/sugen/ don't return anything for `page` and `archive`.</aside>
+<aside class="notice">/sugen/ don't have any values for `page` and `archive`.</aside>
