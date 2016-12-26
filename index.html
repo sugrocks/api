@@ -117,6 +117,8 @@
 
 <p>You can use our API to get the recent /sug/ threads, OP template, latest leaks (if available) and downloads !</p>
 
+<p>You can also <a href="http://docs.sugrocks.apiary.io/">check out the Apiary version of this API</a>.</p>
+
           <h1 id="threads">Threads</h1>
 <pre class="highlight json"><code><span class="p">[</span><span class="w">
   </span><span class="p">{</span><span class="w">
@@ -157,7 +159,7 @@
 
 <h3 id="http-request">HTTP Request</h3>
 
-<p><code class="prettyprint">GET htts://sug.rocks/api/threads.json</code></p>
+<p><code class="prettyprint">GET https://api.sug.rocks/threads.json</code></p>
 
 <aside class="notice">/sugen/ don&rsquo;t return anything for `page` and `archive`.</aside>
 
@@ -173,7 +175,7 @@
 
 <h3 id="http-request">HTTP Request</h3>
 
-<p><code class="prettyprint">GET htts://sug.rocks/api/op.json</code></p>
+<p><code class="prettyprint">GET https://api.sug.rocks/op.json</code></p>
 
 <aside class="success">This can&rsquo;t be simpler.</aside>
 
@@ -205,7 +207,7 @@
 
 <h3 id="http-request">HTTP Request</h3>
 
-<p><code class="prettyprint">GET htts://sug.rocks/api/leaks.json</code></p>
+<p><code class="prettyprint">GET https://api.sug.rocks/leaks.json</code></p>
 
 <aside class="success">Usually, there&rsquo;s only one video preview. But whow knows?</aside>
 
@@ -279,7 +281,7 @@
 
 <h3 id="http-request">HTTP Request</h3>
 
-<p><code class="prettyprint">GET htts://sug.rocks/api/dl.json</code></p>
+<p><code class="prettyprint">GET https://api.sug.rocks/dl.json</code></p>
 
 <aside class="notice">Files that contains two episodes in one have an underscore between episodes number. Like for episode 1 & 2: `1_2`.</aside>
 
