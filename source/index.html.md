@@ -9,6 +9,7 @@ toc_footers:
 includes:
   - threads
   - op
+  - schedule
   - leaks
   - downloads
 

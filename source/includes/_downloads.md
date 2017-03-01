@@ -24,7 +24,7 @@
       "title": "Laser Light Cannon",
       "torrent": null,
       "url": "https://example.com/mega/01x02.mp4"
-    },
+    }
   ],
   "itunes": [
     {
@@ -48,7 +48,7 @@
       "title": "Cheeseburger Backpack & Together Breakfast",
       "torrent": "https://example.com/torrents/01x03_04.mkv.torrent",
       "url": "https://example.com/01x03_04.mkv"
-    },
+    }
   ],
   "preair": [
     {
