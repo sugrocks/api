@@ -49,6 +49,45 @@ paths:
                 type: string
                 default: "[TITLE] Edition\n\nLast Thread: >>[POST]\n\n[NEW RELEASES]\n{...}"
                 description: "The template"
+  /schedule.json:
+    get:
+      description: |
+        Returns a copy of Cartoon Network’s schedule for Steven Universe
+      operationId: schedule
+      responses:
+        200:
+          description: schedule
+          schema:
+            type: object
+            required:
+              - date
+              - id
+              - time
+              - timestamp
+              - title
+            properties:
+              date:
+                type: string
+                default: "March 03"
+                description: "Date when the block starts (EST timezone)"
+              id:
+                type: integer
+                format: int32
+                default: 2065557
+                description: "Unique ID from CN"
+              time:
+                type: string
+                default: "7:00 PM"
+                description: "Time when the block starts (EST timezone)"
+              timestamp:
+                type: integer
+                format: int32
+                default: 1488585600
+                description: "Epoch timestamp for this airing"
+              title:
+                type: string
+                default: "Tiger Philanthropist"
+                description: "The name of the episodes during this block"
   /leaks.json:
     get:
       description: |
