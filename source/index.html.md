@@ -20,6 +20,4 @@ search: false
 
 Welcome to the /sug/.rocks API!
 
-You can use our API to get the recent /sug/ threads, OP template, latest leaks (if available) and downloads !
-
-You can also [check out the Apiary version of this API](http://docs.sugrocks.apiary.io/).
+You can use our API to get the recent /sug/ threads, OP template, show schedule, latest leaks (if available) and downloads !
