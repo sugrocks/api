@@ -4,12 +4,13 @@ title: /sug/.rocks API Reference
 toc_footers:
   - <a href='https://sug.rocks/'>Visit /sug/.rocks</a>
   - <a href='https://github.com/sugrocks/api'>Contribute to this doc</a>
-  - <a href='https://github.com/tripit/slate'>Documentation Powered by Slate</a>
+  - <a href=https://github.com/lord/slate>Documentation Powered by Slate</a>
 
 includes:
   - threads
   - op
   - schedule
+  - cnschedule
   - leaks
   - downloads
 

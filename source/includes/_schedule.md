@@ -2,6 +2,9 @@
 
 ```json
 {
+  "_": {
+    "generated": 1499616800
+  },
   "cn": [
     {
       "date": "March 03",
@@ -27,17 +30,17 @@
       "title": "Lion 4: Alternate Ending"
     },
     {
-      "date": "3/10/2017",
-      "episode": "S04E19",
-      "id": 300907630993,
-      "synopsis": null,
-      "title": "Room for Ruby"
+      "date": "6/01/2017",
+      "episode": "S04E28",
+      "id": 245146366966,
+      "synopsis": "After his revival, Lars questions what happened to him.",
+      "title": "Lars' Head"
     }
   ]
 }
 ```
 
-This endpoint retrieves a copy of Cartoon Network's and Screener's (Zap2It) schedule for Steven Universe.
+This endpoint retrieves a copy of Cartoon Network's and Zap2It's schedule for Steven Universe.
 
 ### HTTP Request
 

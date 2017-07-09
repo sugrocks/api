@@ -3,36 +3,20 @@
 ```json
 [
   {
-    "archive": "https://desuarchive.org/trash/thread/6886430",
+    "archive": "https://desuarchive.org/trash/thread/10343652",
     "board": "trash",
-    "edition": "It's Christmas Edition",
-    "id": 26886430,
-    "media": "https://is.4chan.org/trash/1482654547608s.jpg",
-    "op": "\/sug\/ - Steven Universe General<br><br>It&#039;s Christmas Edition[snip]",
-    "page": 7,
-    "status": {
-      "archived": false,
-      "bump_limit": true,
-      "image_limit": false
-    },
-    "timestamp": 1482654547,
-    "url": "https://boards.4chan.org/trash/thread/6886430"
-  },
-  {
-    "archive": null,
-    "board": "sugen",
-    "edition": "Not Steven Universe Edition",
-    "id": 94921,
-    "media": "https://media.8ch.net/file_store/thumb/f44639d20cc93eac99d5ea6d67fbb5d7cdbf567f0313ca221ca0b81aa12762aa.png",
-    "op": "<p class=\"body-line ltr \">Not Steven Universe Edition <\/p>[snip]",
-    "page": 0,
+    "edition": "Survive the Night Edition",
+    "id": 10343652,
+    "media": "https://i.4cdn.org/trash/1499594515057s.jpg",
+    "op": "/sug/ - Steven Universe General<br><br>Survive the Night Edition<br><br>Last Thread: <span class=\"deadlink\">&gt;&gt;10339720</span> <br><br>[NEW RELEASES]<br><span class=\"quote\">&gt;Soundtrack (Vol. 1)</span><br>Direct: {...}",
+    "page": 1,
     "status": {
       "archived": false,
       "bump_limit": false,
       "image_limit": false
     },
-    "timestamp": 1480547635,
-    "url": "https://8ch.net/sugen/res/94921.html"
+    "timestamp": 1499594515,
+    "url": "https://boards.4chan.org/trash/thread/10343652"
   }
 ]
 ```
@@ -43,4 +27,4 @@ This endpoint retrieves all threads.
 
 `GET https://api.sug.rocks/threads.json`
 
-<aside class="notice">/sugen/ don't have any values for `page` and `archive`.</aside>
+<aside class="warning">This endpoint might change in the next months.</aside>

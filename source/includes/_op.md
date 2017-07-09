@@ -14,3 +14,5 @@ This endpoint retrieves the OP for new threads.
 `GET https://api.sug.rocks/op.json`
 
 <aside class="success">This can't be simpler.</aside>
+
+<aside class="warning">This endpoint might change in the next months.</aside>

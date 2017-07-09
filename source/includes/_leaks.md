@@ -32,3 +32,5 @@ This endpoint retrieves all the available leaks.
 `GET https://api.sug.rocks/leaks.json`
 
 <aside class="success">Usually, there's only one video preview. But whow knows?</aside>
+
+<aside class="warning">This endpoint might change in the next months.</aside>
