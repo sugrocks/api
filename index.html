@@ -9,81 +9,190 @@
     <style>
       .highlight table td { padding: 5px; }
 .highlight table pre { margin: 0; }
-.highlight, .highlight .w {
-  color: #f8f8f2;
-  background-color: #272822;
+.highlight .gh {
+  color: #999999;
 }
-.highlight .err {
-  color: #272822;
-  background-color: #f92672;
+.highlight .sr {
+  color: #f6aa11;
 }
-.highlight .c, .highlight .cd, .highlight .cm, .highlight .c1, .highlight .cs {
+.highlight .go {
+  color: #888888;
+}
+.highlight .gp {
+  color: #555555;
+}
+.highlight .gs {
+}
+.highlight .gu {
+  color: #aaaaaa;
+}
+.highlight .nb {
+  color: #f6aa11;
+}
+.highlight .cm {
   color: #75715e;
 }
 .highlight .cp {
-  color: #f4bf75;
+  color: #75715e;
 }
-.highlight .nt {
-  color: #f4bf75;
+.highlight .c1 {
+  color: #75715e;
 }
-.highlight .o, .highlight .ow {
-  color: #f8f8f2;
+.highlight .cs {
+  color: #75715e;
 }
-.highlight .p, .highlight .pi {
-  color: #f8f8f2;
+.highlight .c, .highlight .cd {
+  color: #75715e;
 }
-.highlight .gi {
-  color: #a6e22e;
+.highlight .err {
+  color: #960050;
+}
+.highlight .gr {
+  color: #960050;
+}
+.highlight .gt {
+  color: #960050;
 }
 .highlight .gd {
-  color: #f92672;
+  color: #49483e;
 }
-.highlight .gh {
-  color: #66d9ef;
-  background-color: #272822;
-  font-weight: bold;
+.highlight .gi {
+  color: #49483e;
 }
-.highlight .k, .highlight .kn, .highlight .kp, .highlight .kr, .highlight .kv {
-  color: #ae81ff;
+.highlight .ge {
+  color: #49483e;
 }
 .highlight .kc {
-  color: #fd971f;
-}
-.highlight .kt {
-  color: #fd971f;
-}
-.highlight .kd {
-  color: #fd971f;
-}
-.highlight .s, .highlight .sb, .highlight .sc, .highlight .sd, .highlight .s2, .highlight .sh, .highlight .sx, .highlight .s1 {
-  color: #a6e22e;
-}
-.highlight .sr {
-  color: #a1efe4;
-}
-.highlight .si {
-  color: #cc6633;
-}
-.highlight .se {
-  color: #cc6633;
-}
-.highlight .nn {
-  color: #f4bf75;
-}
-.highlight .nc {
-  color: #f4bf75;
-}
-.highlight .no {
-  color: #f4bf75;
-}
-.highlight .na {
   color: #66d9ef;
 }
-.highlight .m, .highlight .mf, .highlight .mh, .highlight .mi, .highlight .il, .highlight .mo, .highlight .mb, .highlight .mx {
-  color: #a6e22e;
+.highlight .kd {
+  color: #66d9ef;
+}
+.highlight .kr {
+  color: #66d9ef;
+}
+.highlight .no {
+  color: #66d9ef;
+}
+.highlight .kt {
+  color: #66d9ef;
+}
+.highlight .mf {
+  color: #ae81ff;
+}
+.highlight .mh {
+  color: #ae81ff;
+}
+.highlight .il {
+  color: #ae81ff;
+}
+.highlight .mi {
+  color: #ae81ff;
+}
+.highlight .mo {
+  color: #ae81ff;
+}
+.highlight .m, .highlight .mb, .highlight .mx {
+  color: #ae81ff;
+}
+.highlight .sc {
+  color: #ae81ff;
+}
+.highlight .se {
+  color: #ae81ff;
 }
 .highlight .ss {
+  color: #ae81ff;
+}
+.highlight .sd {
+  color: #e6db74;
+}
+.highlight .s2 {
+  color: #e6db74;
+}
+.highlight .sb {
+  color: #e6db74;
+}
+.highlight .sh {
+  color: #e6db74;
+}
+.highlight .si {
+  color: #e6db74;
+}
+.highlight .sx {
+  color: #e6db74;
+}
+.highlight .s1 {
+  color: #e6db74;
+}
+.highlight .s {
+  color: #e6db74;
+}
+.highlight .na {
   color: #a6e22e;
+}
+.highlight .nc {
+  color: #a6e22e;
+}
+.highlight .nd {
+  color: #a6e22e;
+}
+.highlight .ne {
+  color: #a6e22e;
+}
+.highlight .nf {
+  color: #a6e22e;
+}
+.highlight .vc {
+  color: #ffffff;
+}
+.highlight .nn {
+  color: #ffffff;
+}
+.highlight .nl {
+  color: #ffffff;
+}
+.highlight .ni {
+  color: #ffffff;
+}
+.highlight .bp {
+  color: #ffffff;
+}
+.highlight .vg {
+  color: #ffffff;
+}
+.highlight .vi {
+  color: #ffffff;
+}
+.highlight .nv {
+  color: #ffffff;
+}
+.highlight .w {
+  color: #ffffff;
+}
+.highlight {
+  color: #ffffff;
+}
+.highlight .n, .highlight .py, .highlight .nx {
+  color: #ffffff;
+}
+.highlight .ow {
+  color: #f92672;
+}
+.highlight .nt {
+  color: #f92672;
+}
+.highlight .k, .highlight .kv {
+  color: #f92672;
+}
+.highlight .kn {
+  color: #f92672;
+}
+.highlight .kp {
+  color: #f92672;
+}
+.highlight .o {
+  color: #f92672;
 }
     </style>
     <link href="stylesheets/screen.css" rel="stylesheet" media="screen" />
@@ -105,7 +214,7 @@
         <ul class="toc-footer">
             <li><a href='https://sug.rocks/'>Visit /sug/.rocks</a></li>
             <li><a href='https://github.com/sugrocks/api'>Contribute to this doc</a></li>
-            <li><a href='https://github.com/tripit/slate'>Documentation Powered by Slate</a></li>
+            <li><a href=https://github.com/lord/slate>Documentation Powered by Slate</a></li>
         </ul>
     </div>
     <div class="page-wrapper">
@@ -118,38 +227,22 @@
 <p>You can use our API to get the recent /sug/ threads, OP template, show schedule, latest leaks (if available) and downloads !</p>
 
           <h1 id="threads">Threads</h1>
-<pre class="highlight json"><code><span class="p">[</span><span class="w">
+<pre class="highlight json tab-json"><code><span class="p">[</span><span class="w">
   </span><span class="p">{</span><span class="w">
-    </span><span class="s2">"archive"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://desuarchive.org/trash/thread/6886430"</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"archive"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://desuarchive.org/trash/thread/10343652"</span><span class="p">,</span><span class="w">
     </span><span class="s2">"board"</span><span class="p">:</span><span class="w"> </span><span class="s2">"trash"</span><span class="p">,</span><span class="w">
-    </span><span class="s2">"edition"</span><span class="p">:</span><span class="w"> </span><span class="s2">"It's Christmas Edition"</span><span class="p">,</span><span class="w">
-    </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">26886430</span><span class="p">,</span><span class="w">
-    </span><span class="s2">"media"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://is.4chan.org/trash/1482654547608s.jpg"</span><span class="p">,</span><span class="w">
-    </span><span class="s2">"op"</span><span class="p">:</span><span class="w"> </span><span class="s2">"</span><span class="se">\/</span><span class="s2">sug</span><span class="se">\/</span><span class="s2"> - Steven Universe General&lt;br&gt;&lt;br&gt;It&amp;#039;s Christmas Edition[snip]"</span><span class="p">,</span><span class="w">
-    </span><span class="s2">"page"</span><span class="p">:</span><span class="w"> </span><span class="mi">7</span><span class="p">,</span><span class="w">
-    </span><span class="s2">"status"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
-      </span><span class="s2">"archived"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span><span class="w">
-      </span><span class="s2">"bump_limit"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span><span class="w">
-      </span><span class="s2">"image_limit"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="w">
-    </span><span class="p">},</span><span class="w">
-    </span><span class="s2">"timestamp"</span><span class="p">:</span><span class="w"> </span><span class="mi">1482654547</span><span class="p">,</span><span class="w">
-    </span><span class="s2">"url"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://boards.4chan.org/trash/thread/6886430"</span><span class="w">
-  </span><span class="p">},</span><span class="w">
-  </span><span class="p">{</span><span class="w">
-    </span><span class="s2">"archive"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
-    </span><span class="s2">"board"</span><span class="p">:</span><span class="w"> </span><span class="s2">"sugen"</span><span class="p">,</span><span class="w">
-    </span><span class="s2">"edition"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Not Steven Universe Edition"</span><span class="p">,</span><span class="w">
-    </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">94921</span><span class="p">,</span><span class="w">
-    </span><span class="s2">"media"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://media.8ch.net/file_store/thumb/f44639d20cc93eac99d5ea6d67fbb5d7cdbf567f0313ca221ca0b81aa12762aa.png"</span><span class="p">,</span><span class="w">
-    </span><span class="s2">"op"</span><span class="p">:</span><span class="w"> </span><span class="s2">"&lt;p class=</span><span class="se">\"</span><span class="s2">body-line ltr </span><span class="se">\"</span><span class="s2">&gt;Not Steven Universe Edition &lt;</span><span class="se">\/</span><span class="s2">p&gt;[snip]"</span><span class="p">,</span><span class="w">
-    </span><span class="s2">"page"</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"edition"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Survive the Night Edition"</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">10343652</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"media"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://i.4cdn.org/trash/1499594515057s.jpg"</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"op"</span><span class="p">:</span><span class="w"> </span><span class="s2">"/sug/ - Steven Universe General&lt;br&gt;&lt;br&gt;Survive the Night Edition&lt;br&gt;&lt;br&gt;Last Thread: &lt;span class=</span><span class="se">\"</span><span class="s2">deadlink</span><span class="se">\"</span><span class="s2">&gt;&amp;gt;&amp;gt;10339720&lt;/span&gt; &lt;br&gt;&lt;br&gt;[NEW RELEASES]&lt;br&gt;&lt;span class=</span><span class="se">\"</span><span class="s2">quote</span><span class="se">\"</span><span class="s2">&gt;&amp;gt;Soundtrack (Vol. 1)&lt;/span&gt;&lt;br&gt;Direct: {...}"</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"page"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w">
     </span><span class="s2">"status"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
       </span><span class="s2">"archived"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span><span class="w">
       </span><span class="s2">"bump_limit"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span><span class="w">
       </span><span class="s2">"image_limit"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="w">
     </span><span class="p">},</span><span class="w">
-    </span><span class="s2">"timestamp"</span><span class="p">:</span><span class="w"> </span><span class="mi">1480547635</span><span class="p">,</span><span class="w">
-    </span><span class="s2">"url"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://8ch.net/sugen/res/94921.html"</span><span class="w">
+    </span><span class="s2">"timestamp"</span><span class="p">:</span><span class="w"> </span><span class="mi">1499594515</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"url"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://boards.4chan.org/trash/thread/10343652"</span><span class="w">
   </span><span class="p">}</span><span class="w">
 </span><span class="p">]</span><span class="w">
 </span></code></pre>
@@ -159,10 +252,10 @@
 
 <p><code class="prettyprint">GET https://api.sug.rocks/threads.json</code></p>
 
-<aside class="notice">/sugen/ don&rsquo;t have any values for `page` and `archive`.</aside>
+<aside class="warning">This endpoint might change in the next months.</aside>
 
           <h1 id="op">OP</h1>
-<pre class="highlight json"><code><span class="p">{</span><span class="w">
+<pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
   </span><span class="s2">"content"</span><span class="p">:</span><span class="w"> </span><span class="s2">"[TITLE] Edition</span><span class="se">\n\n</span><span class="s2">Last Thread: &gt;&gt;[POST]</span><span class="se">\n\n</span><span class="s2">[NEW RELEASES]</span><span class="se">\n</span><span class="s2">&gt;Steven's Dream &amp; Adventures in Light Distortion</span><span class="se">\n</span><span class="s2">Airing January 30 at 7PM EST: https:</span><span class="se">\/\/</span><span class="s2">twitter.com</span><span class="se">\/</span><span class="s2">cartoonnetwork</span><span class="se">\/</span><span class="s2">status</span><span class="se">\/</span><span class="s2">811588726912585729</span><span class="se">\n</span><span class="s2">&gt;Three Gems and a Baby</span><span class="se">\n</span><span class="s2">[snip]"</span><span class="p">,</span><span class="w">
   </span><span class="s2">"subject"</span><span class="p">:</span><span class="w"> </span><span class="s2">"/sug/ - Steven Universe General"</span><span class="w">
 </span><span class="p">}</span><span class="w">
@@ -175,8 +268,13 @@
 
 <aside class="success">This can&rsquo;t be simpler.</aside>
 
+<aside class="warning">This endpoint might change in the next months.</aside>
+
           <h1 id="schedule">Schedule</h1>
-<pre class="highlight json"><code><span class="p">{</span><span class="w">
+<pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
+  </span><span class="s2">"_"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+    </span><span class="s2">"generated"</span><span class="p">:</span><span class="w"> </span><span class="mi">1499616800</span><span class="w">
+  </span><span class="p">},</span><span class="w">
   </span><span class="s2">"cn"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
     </span><span class="p">{</span><span class="w">
       </span><span class="s2">"date"</span><span class="p">:</span><span class="w"> </span><span class="s2">"March 03"</span><span class="p">,</span><span class="w">
@@ -202,16 +300,16 @@
       </span><span class="s2">"title"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Lion 4: Alternate Ending"</span><span class="w">
     </span><span class="p">},</span><span class="w">
     </span><span class="p">{</span><span class="w">
-      </span><span class="s2">"date"</span><span class="p">:</span><span class="w"> </span><span class="s2">"3/10/2017"</span><span class="p">,</span><span class="w">
-      </span><span class="s2">"episode"</span><span class="p">:</span><span class="w"> </span><span class="s2">"S04E19"</span><span class="p">,</span><span class="w">
-      </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">300907630993</span><span class="p">,</span><span class="w">
-      </span><span class="s2">"synopsis"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
-      </span><span class="s2">"title"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Room for Ruby"</span><span class="w">
+      </span><span class="s2">"date"</span><span class="p">:</span><span class="w"> </span><span class="s2">"6/01/2017"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"episode"</span><span class="p">:</span><span class="w"> </span><span class="s2">"S04E28"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">245146366966</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"synopsis"</span><span class="p">:</span><span class="w"> </span><span class="s2">"After his revival, Lars questions what happened to him."</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"title"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Lars' Head"</span><span class="w">
     </span><span class="p">}</span><span class="w">
   </span><span class="p">]</span><span class="w">
 </span><span class="p">}</span><span class="w">
 </span></code></pre>
-<p>This endpoint retrieves a copy of Cartoon Network&rsquo;s and Screener&rsquo;s (Zap2It) schedule for Steven Universe.</p>
+<p>This endpoint retrieves a copy of Cartoon Network&rsquo;s and Zap2It&rsquo;s schedule for Steven Universe.</p>
 
 <h3 id="http-request">HTTP Request</h3>
 
@@ -219,8 +317,80 @@
 
 <aside class="notice">This endpoint is using the American Eastern timezone (EST, -0500). Use the added `timestamp` value to convert to your own (local) timezone if needed.</aside>
 
+          <h1 id="cns-schedule">CN&rsquo;s Schedule</h1>
+<pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
+  </span><span class="s2">"2017-07-06"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+    </span><span class="s2">"source"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Cartoon Network"</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"schedule"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+      </span><span class="p">{</span><span class="w">
+        </span><span class="s2">"date"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2017-07-06"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"time"</span><span class="p">:</span><span class="w"> </span><span class="s2">"6:00 am"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"timestamp"</span><span class="p">:</span><span class="w"> </span><span class="mi">1499335200</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"timestamp_end"</span><span class="p">:</span><span class="w"> </span><span class="mi">1499337000</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"show"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Amazing World of Gumball"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"title"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Friend /Saint "</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"slots"</span><span class="p">:</span><span class="w"> </span><span class="mi">2</span><span class="w">
+      </span><span class="p">},</span><span class="w">
+      </span><span class="p">{</span><span class="w">
+        </span><span class="s2">"date"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2017-07-06"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"time"</span><span class="p">:</span><span class="w"> </span><span class="s2">"6:30 am"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"timestamp"</span><span class="p">:</span><span class="w"> </span><span class="mi">1499337000</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"timestamp_end"</span><span class="p">:</span><span class="w"> </span><span class="mi">1499338800</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"show"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Amazing World of Gumball"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"title"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Oracle /Safety "</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"slots"</span><span class="p">:</span><span class="w"> </span><span class="mi">2</span><span class="w">
+      </span><span class="p">}</span><span class="w">
+    </span><span class="p">]</span><span class="w">
+  </span><span class="p">},</span><span class="w">
+  </span><span class="s2">"2017-07-17"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+    </span><span class="s2">"source"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Zap2it"</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"schedule"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+      </span><span class="p">{</span><span class="w">
+        </span><span class="s2">"date"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2017-07-17"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"time"</span><span class="p">:</span><span class="w"> </span><span class="s2">"6:00 am"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"timestamp"</span><span class="p">:</span><span class="w"> </span><span class="mi">1500289200</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"timestamp_end"</span><span class="p">:</span><span class="w"> </span><span class="mi">1500291000</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"show"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Amazing World of Gumball"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"title"</span><span class="p">:</span><span class="w"> </span><span class="s2">"The Coach; The Joy"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"slots"</span><span class="p">:</span><span class="w"> </span><span class="mi">2</span><span class="w">
+      </span><span class="p">},</span><span class="w">
+      </span><span class="p">{</span><span class="w">
+        </span><span class="s2">"date"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2017-07-17"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"time"</span><span class="p">:</span><span class="w"> </span><span class="s2">"6:30 am"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"timestamp"</span><span class="p">:</span><span class="w"> </span><span class="mi">1500291000</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"timestamp_end"</span><span class="p">:</span><span class="w"> </span><span class="mi">1500292800</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"show"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Amazing World of Gumball"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"title"</span><span class="p">:</span><span class="w"> </span><span class="s2">"The Kids; The Fan"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"slots"</span><span class="p">:</span><span class="w"> </span><span class="mi">2</span><span class="w">
+      </span><span class="p">}</span><span class="w">
+    </span><span class="p">]</span><span class="w">
+  </span><span class="p">},</span><span class="w">
+  </span><span class="s2">"_"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+    </span><span class="s2">"generated"</span><span class="p">:</span><span class="w"> </span><span class="mi">1499619654</span><span class="w">
+  </span><span class="p">}</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre>
+<p>This endpoint retrieves a copy of Cartoon Network&rsquo;s schedule from various sources (&ldquo;Cartoon Network&rdquo; and &ldquo;Zap2it&rdquo;). It usually goes from 3 days back to 13 days ahead.</p>
+
+<p><strong>Details of a <code class="prettyprint">schedule</code> element:</strong></p>
+
+<ul>
+<li><code class="prettyprint">date</code> and <code class="prettyprint">time</code> are straightforward</li>
+<li><code class="prettyprint">timestamp</code> is when the block starts</li>
+<li><code class="prettyprint">timestamp_end</code> is when the block ends</li>
+<li><code class="prettyprint">show</code> is the name of the show (might also be <code class="prettyprint">SPECIAL</code> or <code class="prettyprint">MOVIE</code>)</li>
+<li><code class="prettyprint">title</code> is the episode(s)/movie/block title (might be <code class="prettyprint">null</code>)</li>
+<li><code class="prettyprint">slots</code> is the length of the block. A single slot is usually 15 minutes</li>
+</ul>
+
+<h3 id="http-request">HTTP Request</h3>
+
+<p><code class="prettyprint">GET https://api.sug.rocks/cnschedule.json</code></p>
+
+<aside class="notice">This endpoint is using the American Eastern timezone (EST, -0500). Use the added `timestamp` value to convert to your own (local) timezone if needed.</aside>
+
           <h1 id="leaks">Leaks</h1>
-<pre class="highlight json"><code><span class="p">[</span><span class="w">
+<pre class="highlight json tab-json"><code><span class="p">[</span><span class="w">
   </span><span class="p">{</span><span class="w">
     </span><span class="s2">"air_date"</span><span class="p">:</span><span class="w"> </span><span class="mi">1480636800</span><span class="p">,</span><span class="w">
     </span><span class="s2">"date"</span><span class="p">:</span><span class="w"> </span><span class="mi">1480341600</span><span class="p">,</span><span class="w">
@@ -251,16 +421,43 @@
 
 <aside class="success">Usually, there&rsquo;s only one video preview. But whow knows?</aside>
 
+<aside class="warning">This endpoint might change in the next months.</aside>
+
           <h1 id="downloads">Downloads</h1>
-<pre class="highlight json"><code><span class="p">{</span><span class="w">
+<pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
+  </span><span class="s2">"_"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+    </span><span class="s2">"generated"</span><span class="p">:</span><span class="w"> </span><span class="mi">1496501844</span><span class="w">
+  </span><span class="p">},</span><span class="w">
+  </span><span class="s2">"comics"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+    </span><span class="p">{</span><span class="w">
+      </span><span class="s2">"category"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Books"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"cbr"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://example.com/SUG-CBR-BOOK-GTTCG.cbr"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"cbz"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://example.com/SUG-CBZ-BOOK-GTTCG.cbz"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"date"</span><span class="p">:</span><span class="w"> </span><span class="mi">1490369885</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"epub"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://example.com/SUG-EPUB-BOOK-GTTCG.epub"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"BOOK-GTTCG"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"pdf"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://example.com/SUG-PDF-BOOK-GTTCG.pdf"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"title"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Guide to the Crystal Gems"</span><span class="w">
+    </span><span class="p">},</span><span class="w">
+    </span><span class="p">{</span><span class="w">
+      </span><span class="s2">"category"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Main Comics (2014-15)"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"cbr"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://example.com/SUG-CBR-COMIC01.cbr"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"cbz"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://example.com/SUG-CBZ-COMIC01.cbz"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"date"</span><span class="p">:</span><span class="w"> </span><span class="mi">1490369885</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"epub"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://example.com/SUG-EPUB-COMIC01.epub"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"COMIC01"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"pdf"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://example.com/SUG-PDF-COMIC01.pdf"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"title"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Issue 01"</span><span class="w">
+    </span><span class="p">},</span><span class="w">
+  </span><span class="p">],</span><span class="w">
   </span><span class="s2">"individual"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
     </span><span class="p">{</span><span class="w">
       </span><span class="s2">"dailymotion"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
       </span><span class="s2">"date"</span><span class="p">:</span><span class="w"> </span><span class="mi">1473502695</span><span class="p">,</span><span class="w">
-      </span><span class="s2">"episode"</span><span class="p">:</span><span class="w"> </span><span class="s2">"1"</span><span class="p">,</span><span class="w">
-      </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"episode"</span><span class="p">:</span><span class="w"> </span><span class="s2">"01"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">101</span><span class="p">,</span><span class="w">
       </span><span class="s2">"marebucks"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://marebucks.com/sun/1"</span><span class="p">,</span><span class="w">
-      </span><span class="s2">"season"</span><span class="p">:</span><span class="w"> </span><span class="s2">"1"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"season"</span><span class="p">:</span><span class="w"> </span><span class="s2">"01"</span><span class="p">,</span><span class="w">
       </span><span class="s2">"title"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Gem Glow"</span><span class="p">,</span><span class="w">
       </span><span class="s2">"torrent"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
       </span><span class="s2">"url"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://example.com/mega/01x01.mp4"</span><span class="w">
@@ -268,10 +465,10 @@
     </span><span class="p">{</span><span class="w">
       </span><span class="s2">"dailymotion"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
       </span><span class="s2">"date"</span><span class="p">:</span><span class="w"> </span><span class="mi">1473502695</span><span class="p">,</span><span class="w">
-      </span><span class="s2">"episode"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2"</span><span class="p">,</span><span class="w">
-      </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">2</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"episode"</span><span class="p">:</span><span class="w"> </span><span class="s2">"02"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">102</span><span class="p">,</span><span class="w">
       </span><span class="s2">"marebucks"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://marebucks.com/sun/2"</span><span class="p">,</span><span class="w">
-      </span><span class="s2">"season"</span><span class="p">:</span><span class="w"> </span><span class="s2">"1"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"season"</span><span class="p">:</span><span class="w"> </span><span class="s2">"01"</span><span class="p">,</span><span class="w">
       </span><span class="s2">"title"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Laser Light Cannon"</span><span class="p">,</span><span class="w">
       </span><span class="s2">"torrent"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
       </span><span class="s2">"url"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://example.com/mega/01x02.mp4"</span><span class="w">
@@ -281,10 +478,10 @@
     </span><span class="p">{</span><span class="w">
       </span><span class="s2">"dailymotion"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
       </span><span class="s2">"date"</span><span class="p">:</span><span class="w"> </span><span class="mi">1473502695</span><span class="p">,</span><span class="w">
-      </span><span class="s2">"episode"</span><span class="p">:</span><span class="w"> </span><span class="s2">"1_2"</span><span class="p">,</span><span class="w">
-      </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"episode"</span><span class="p">:</span><span class="w"> </span><span class="s2">"01_02"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">10102</span><span class="p">,</span><span class="w">
       </span><span class="s2">"marebucks"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://marebucks.com/sun/1"</span><span class="p">,</span><span class="w">
-      </span><span class="s2">"season"</span><span class="p">:</span><span class="w"> </span><span class="s2">"1"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"season"</span><span class="p">:</span><span class="w"> </span><span class="s2">"01"</span><span class="p">,</span><span class="w">
       </span><span class="s2">"title"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Gem Glow &amp; Laser Light Cannon"</span><span class="p">,</span><span class="w">
       </span><span class="s2">"torrent"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://example.com/torrents/01x01_02.mkv.torrent"</span><span class="p">,</span><span class="w">
       </span><span class="s2">"url"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://example.com/01x01_02.mkv"</span><span class="w">
@@ -292,10 +489,10 @@
     </span><span class="p">{</span><span class="w">
       </span><span class="s2">"dailymotion"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
       </span><span class="s2">"date"</span><span class="p">:</span><span class="w"> </span><span class="mi">1473502695</span><span class="p">,</span><span class="w">
-      </span><span class="s2">"episode"</span><span class="p">:</span><span class="w"> </span><span class="s2">"3_4"</span><span class="p">,</span><span class="w">
-      </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">2</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"episode"</span><span class="p">:</span><span class="w"> </span><span class="s2">"03_04"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">10304</span><span class="p">,</span><span class="w">
       </span><span class="s2">"marebucks"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://marebucks.com/sun/3"</span><span class="p">,</span><span class="w">
-      </span><span class="s2">"season"</span><span class="p">:</span><span class="w"> </span><span class="s2">"1"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"season"</span><span class="p">:</span><span class="w"> </span><span class="s2">"01"</span><span class="p">,</span><span class="w">
       </span><span class="s2">"title"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Cheeseburger Backpack &amp; Together Breakfast"</span><span class="p">,</span><span class="w">
       </span><span class="s2">"torrent"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://example.com/torrents/01x03_04.mkv.torrent"</span><span class="p">,</span><span class="w">
       </span><span class="s2">"url"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://example.com/01x03_04.mkv"</span><span class="w">
@@ -303,13 +500,13 @@
   </span><span class="p">],</span><span class="w">
   </span><span class="s2">"preair"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
     </span><span class="p">{</span><span class="w">
-      </span><span class="s2">"dailymotion"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://dailymotion.com/"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"dailymotion"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://dailymotion.com/video/x5lts7g"</span><span class="p">,</span><span class="w">
       </span><span class="s2">"date"</span><span class="p">:</span><span class="w"> </span><span class="mi">1473502695</span><span class="p">,</span><span class="w">
-      </span><span class="s2">"episode"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w">
-      </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w">
-      </span><span class="s2">"marebucks"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://marebucks.com/sun/"</span><span class="p">,</span><span class="w">
-      </span><span class="s2">"season"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w">
-      </span><span class="s2">"title"</span><span class="p">:</span><span class="w"> </span><span class="s2">"episode title"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"episode"</span><span class="p">:</span><span class="w"> </span><span class="s2">"01"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">501</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"marebucks"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://marebucks.com/sun/127"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"season"</span><span class="p">:</span><span class="w"> </span><span class="s2">"05"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"title"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Stuck Together"</span><span class="p">,</span><span class="w">
       </span><span class="s2">"torrent"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
       </span><span class="s2">"url"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://example.com/preair/ep.mkv"</span><span class="w">
     </span><span class="p">}</span><span class="w">
@@ -318,13 +515,16 @@
 </span></code></pre>
 <p>This endpoint retrieves all downloads.</p>
 
+<p><strong><code class="prettyprint">individual</code>, <code class="prettyprint">itunes</code> and <code class="prettyprint">preair</code> share the same structure, but <code class="prettyprint">comics</code> is totally different.</strong></p>
+
 <h3 id="http-request">HTTP Request</h3>
 
 <p><code class="prettyprint">GET https://api.sug.rocks/dl.json</code></p>
 
-<aside class="notice">Files that contains two episodes in one have an underscore between episodes number. Like for episode 1 & 2: `1_2`.</aside>
+<aside class="notice">Files that contains two episodes in one have an underscore between episodes number. Like for episode 1 & 2: `01_02`.</aside>
 
-<aside class="notice">`url`, `marebucks`, `dailymotion` and `torrent` can be &ldquo;null&rdquo; if not available.</aside>
+<aside class="notice">For episodes: `url`, `marebucks`, `dailymotion` and `torrent` can be &ldquo;null&rdquo; if not available.<br>
+The same goes with comics and books: `cbr`, `cbz`, `epub` and `pdf` can be &ldquo;null&rdquo; if not available.</aside>
 
       </div>
       <div class="dark-box">
