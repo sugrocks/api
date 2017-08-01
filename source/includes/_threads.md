@@ -1,24 +1,74 @@
 # Threads
 
 ```json
-[
-  {
-    "archive": "https://desuarchive.org/trash/thread/10343652",
-    "board": "trash",
-    "edition": "Survive the Night Edition",
-    "id": 10343652,
-    "media": "https://i.4cdn.org/trash/1499594515057s.jpg",
-    "op": "/sug/ - Steven Universe General<br><br>Survive the Night Edition<br><br>Last Thread: <span class=\"deadlink\">&gt;&gt;10339720</span> <br><br>[NEW RELEASES]<br><span class=\"quote\">&gt;Soundtrack (Vol. 1)</span><br>Direct: {...}",
-    "page": 1,
-    "status": {
-      "archived": false,
-      "bump_limit": false,
-      "image_limit": false
+{
+  "_": {
+    "generated": 1501593002
+  },
+  "co": {},
+  "trash": {
+    "10771362": {
+      "archive": "https://desuarchive.org/trash/thread/10771362",
+      "board": "trash",
+      "dates": {
+        "RFC822": "Tue,  1 Aug 2017 03:59:29Z",
+        "atom": "2017-08-01T03:59:29Z",
+        "string": "08/01/17(Tue)03:59:29(UTC)",
+        "timestamp": 1501559969
+      },
+      "edition": "Meekface Edition",
+      "id": 10771362,
+      "media": {
+        "deleted": false,
+        "height": 1449,
+        "name": "1491774395468.png",
+        "spoiler": false,
+        "url": "http://i.4cdn.org/trash/1501559969868.png",
+        "width": 1280
+      },
+      "op": "/sug/ - Steven Universe General<br><br>Meekface Edition<br><br>Last Thread: [snip]",
+      "page": "0",
+      "status": {
+        "archived": false,
+        "bump_limit": true,
+        "closed": true,
+        "dead": true,
+        "image_limit": false
+      },
+      "url": "http://boards.4chan.org/trash/thread/10771362"
     },
-    "timestamp": 1499594515,
-    "url": "https://boards.4chan.org/trash/thread/10343652"
+    "10775044": {
+      "archive": "https://desuarchive.org/trash/thread/10775044",
+      "board": "trash",
+      "dates": {
+        "RFC822": "Tue,  1 Aug 2017 07:59:11Z",
+        "atom": "2017-08-01T07:59:11Z",
+        "string": "08/01/17(Tue)07:59:11(UTC)",
+        "timestamp": 1501574351
+      },
+      "edition": "Mustard Edition",
+      "id": 10775044,
+      "media": {
+        "deleted": false,
+        "height": 630,
+        "name": "NOOOOOOOOOOOOOO MI MUSTARD.png",
+        "spoiler": false,
+        "url": "http://i.4cdn.org/trash/1501574351807.png",
+        "width": 600
+      },
+      "op": "/sug/ - Steven Universe General<br><br>Mustard Edition<br><br>Last Thread: [snip]",
+      "page": 11,
+      "status": {
+        "archived": false,
+        "bump_limit": true,
+        "closed": false,
+        "dead": false,
+        "image_limit": false
+      },
+      "url": "http://boards.4chan.org/trash/thread/10775044"
+    }
   }
-]
+}
 ```
 
 This endpoint retrieves all threads.
@@ -27,4 +77,4 @@ This endpoint retrieves all threads.
 
 `GET https://api.sug.rocks/threads.json`
 
-<aside class="warning">This endpoint might change in the next months.</aside>
+<aside class="info">In this example, the first thread is already dead (404), so you should link to the archive instead of the url. The second example did reach the bump limit but is still available.</aside>
