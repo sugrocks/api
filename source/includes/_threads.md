@@ -77,4 +77,4 @@ This endpoint retrieves all threads.
 
 `GET https://api.sug.rocks/threads.json`
 
-<aside class="info">In this example, the first thread is already dead (404), so you should link to the archive instead of the url. The second example did reach the bump limit but is still available.</aside>
+<aside class="notice">In this example, the first thread is already dead (404), so you should link to the archive instead of the url. The second example did reach the bump limit but is still available.</aside>
