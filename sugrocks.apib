@@ -2,7 +2,7 @@ FORMAT: 1A
 HOST: https://api.sug.rocks
 
 # sug.rocks API
-You can use our API to get the recent /sug/ threads, OP template, show schedule, latest leaks (if available) and downloads !
+You can use our API to get the recent /sug/ threads, OP template, and downloads !
 
 ::: note
 Responses in this documentation are examples.
@@ -103,10 +103,6 @@ This endpoint retrieves all threads.
 ### Get OP [GET]
 This endpoint retrieves the OP template for new threads.
 
-::: warning
-This endpoint might change in the next months.
-:::
-
 + Response 200 (application/json)
     ::: note
     This can't be simpler.
@@ -122,46 +118,6 @@ This endpoint might change in the next months.
 
 # Group Steven Universe
 Other general SU stuff.
-
-## LEAKBOT [/leaks.json]
-
-### Get leaks [GET]
-This endpoint retrieves all the available leaks.
-
-::: warning
-This endpoint might change in the next months.
-:::
-
-+ Response 200 (application/json)
-    ::: note
-    Usually, there’s only one video preview. But whow knows?
-    :::
-
-    + Body
-
-            [
-              {
-                "air_date": 1480636800,
-                "date": 1480341600,
-                "desc": "Greg tells Steven the story of his first winter with Steven.",
-                "id": 846669,
-                "images": [
-                  {
-                    "url": "https://example.com/leaks/01.png"
-                  },
-                  {
-                    "url": "https://example.com/leaks/03.png"
-                  }
-                ],
-                "title": "Three Gems and a Baby",
-                "videos": [
-                  {
-                    "url": "https://example.com/leaks/video.mp4"
-                  }
-                ]
-              }
-            ]
-
 
 ## Downloads [/dl.json]
 
@@ -271,135 +227,4 @@ This endpoint retrieves all the available leaks.
                   "url": "https://example.com/preair/ep.mkv"
                 }
               ]
-            }
-
-
-# Group Schedules
-Data related to schedules.
-
-## Steven Universe [/schedule.json]
-
-### Get SU Schedule [GET]
-This endpoint retrieves a copy of Cartoon Network's and Zap2It's schedule for Steven Universe.
-
-+ Response 200 (application/json)
-    ::: note
-    This endpoint is using the American Eastern timezone (EST, -0500). Use the added `timestamp` value to convert to your own (local) timezone if needed.
-    :::
-
-    + Body
-
-            {
-              "_": {
-                "generated": 1499616800
-              },
-              "cn": [
-                {
-                  "date": "March 03",
-                  "id": 2065557,
-                  "time": "7:00 PM",
-                  "timestamp": 1488585600,
-                  "title": "Tiger Philanthropist"
-                },
-                {
-                  "date": "March 05",
-                  "id": 2083879,
-                  "time": "4:00 PM",
-                  "timestamp": 1488747600,
-                  "title": "New Crystal Gems /That Will Be All"
-                }
-              ],
-              "zap": [
-                {
-                  "date": "3/23/2017",
-                  "episode": "S04E20",
-                  "id": 322327565454,
-                  "synopsis": null,
-                  "title": "Lion 4: Alternate Ending"
-                },
-                {
-                  "date": "6/01/2017",
-                  "episode": "S04E28",
-                  "id": 245146366966,
-                  "synopsis": "After his revival, Lars questions what happened to him.",
-                  "title": "Lars' Head"
-                }
-              ]
-            }
-
-
-## Cartoon Network [/cnschedule.json]
-
-### Get CN's Schedule [GET]
-This endpoint retrieves a copy of Cartoon Network's schedule from various sources ("The Backdoor" and Zap2it).
-It usually goes from 3 days back to 13 days ahead.
-
-::: note
-**Details of a `schedule` element:**
-
-- `date` and `time` are straightforward
-- `timestamp` is when the block starts
-- `timestamp_end` is when the block ends
-- `show` is the name of the show (might also be `SPECIAL` or `MOVIE`)
-- `title` is the episode(s)/movie/block title (might be `null`)
-- `slots` is the length of the block. A single slot is usually 15 minutes
-:::
-
-+ Response 200 (application/json)
-    ::: note
-    This endpoint is using the American Eastern timezone (EST, -0500). Use the added `timestamp` value to convert to your own (local) timezone if needed.
-    :::
-
-    + Body
-
-            {
-              "2017-07-06": {
-                "source": "Cartoon Network",
-                "schedule": [
-                  {
-                    "date": "2017-07-06",
-                    "time": "6:00 am",
-                    "timestamp": 1499335200,
-                    "timestamp_end": 1499337000,
-                    "show": "Amazing World of Gumball",
-                    "title": "Friend /Saint ",
-                    "slots": 2
-                  },
-                  {
-                    "date": "2017-07-06",
-                    "time": "6:30 am",
-                    "timestamp": 1499337000,
-                    "timestamp_end": 1499338800,
-                    "show": "Amazing World of Gumball",
-                    "title": "Oracle /Safety ",
-                    "slots": 2
-                  }
-                ]
-              },
-              "2017-07-17": {
-                "source": "Zap2it",
-                "schedule": [
-                  {
-                    "date": "2017-07-17",
-                    "time": "6:00 am",
-                    "timestamp": 1500289200,
-                    "timestamp_end": 1500291000,
-                    "show": "Amazing World of Gumball",
-                    "title": "The Coach; The Joy",
-                    "slots": 2
-                  },
-                  {
-                    "date": "2017-07-17",
-                    "time": "6:30 am",
-                    "timestamp": 1500291000,
-                    "timestamp_end": 1500292800,
-                    "show": "Amazing World of Gumball",
-                    "title": "The Kids; The Fan",
-                    "slots": 2
-                  }
-                ]
-              },
-              "_": {
-                "generated": 1499619654
-              }
             }
